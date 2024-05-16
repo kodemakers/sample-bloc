@@ -1,0 +1,17 @@
+targets:
+  $default:
+    builders:
+      freezed:
+        generate_for:
+          include:
+            - "**/bloc/**.dart"
+            - "**/cubit/**.dart"
+            - "**/models/**.dart"
+            - "**/responses/**.dart"
+      
+      json_serializable:
+        generate_for:
+          include:
+            - "**/models/**.dart"
+            - "**/responses/**.dart"
+            
